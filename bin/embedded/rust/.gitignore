@@ -3,4 +3,4 @@ target
 Cargo.lock
 
 # not these files
-!libnth_prime.dylib
+!*/libnth_prime.dylib

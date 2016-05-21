@@ -3,8 +3,6 @@ require 'ffi'
 class RustPoro
   extend FFI::Library
   ffi_lib_path = Rails.root.join(
-    'app',
-    'models',
     'embedded',
     'rust',
     'target',

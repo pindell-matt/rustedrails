@@ -1,5 +1,3 @@
-require 'ffi'
-
 class RustPoro
   extend FFI::Library
 

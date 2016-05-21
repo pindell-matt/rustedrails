@@ -13,7 +13,7 @@ class RustPoro
       'libnth_prime.dylib'
     )
   else
-    ffi_lib_path = '/bin/embedded/rust/target/release/libnth_prime.so'
+    ffi_lib_path = 'bin/embedded/rust/target/release/libnth_prime.so'
   end
 
   ffi_lib ffi_lib_path

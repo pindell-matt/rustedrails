@@ -1,2 +1,6 @@
+# ignore these files
 target
 Cargo.lock
+
+# not these files
+!libnth_prime.dylib

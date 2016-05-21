@@ -1,7 +1,3 @@
 # ignore these files
 target
 Cargo.lock
-
-# not these files
-!.gitignore
-!*/libnth_prime.dylib

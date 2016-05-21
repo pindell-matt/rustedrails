@@ -4,6 +4,9 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+# Don't ignore the following.=
+!*/libnth_prime.dylib
+
 # Ignore bundler config.
 /.bundle
 
@@ -21,6 +24,3 @@
 # ignore these files
 */target
 */Cargo.lock
-
-# not these files
-!*/libnth_prime.dylib

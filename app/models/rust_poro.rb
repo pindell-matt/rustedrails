@@ -14,6 +14,7 @@ class RustPoro
     )
   else
     ffi_lib_path = Rails.root.join(
+      '../',
       'bin',
       'embedded',
       'rust',

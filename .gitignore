@@ -17,3 +17,10 @@
 /tmp
 */application.yml
 .rbenv-vars
+
+# ignore these files
+*/target
+*/Cargo.lock
+
+# not these files
+!*/libnth_prime.dylib

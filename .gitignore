@@ -22,9 +22,9 @@
 .rbenv-vars
 
 # ignore these files
-bin/embedded/rust/target/*
+bin/embedded/rust/target/release/.fingerprint
+bin/embedded/rust/target/release/build
+bin/embedded/rust/target/release/deps
+bin/embedded/rust/target/release/examples
+bin/embedded/rust/target/release/native
 bin/embedded/rust/Cargo.lock
-
-
-# Don't ignore the following.
-!bin/embedded/rust/libnth_prime.dylib

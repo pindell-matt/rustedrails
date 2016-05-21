@@ -5,7 +5,7 @@ class RustPoro
 
   if Rails.env == "development"
     ffi_lib_path = Rails.root.join(
-      'app',
+      'bin',
       'embedded',
       'rust',
       'target',
@@ -14,6 +14,7 @@ class RustPoro
     )
   else
     ffi_lib_path = Rails.root.join(
+      'bin',
       'embedded',
       'rust',
       'target',

@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Matt Pindell <pindell.m@gmail.com>"]
 
 [dependencies]
+rustc-serialize = "*"
 
 [lib]
 name = "nth_prime"

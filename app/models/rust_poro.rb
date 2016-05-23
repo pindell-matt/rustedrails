@@ -1,19 +1,10 @@
 class RustPoro
   extend FFI::Library
 
-  if Rails.env == "development"
-    ffi_lib_path = Rails.root.join(
-      'bin',
-      'embedded',
-      'rust',
-      'target',
-      'release',
-      'libnth_prime.dylib'
-    )
-  else
-    ffi_lib_path = 'bin/embedded/rust/target/release/libnth_prime.so'
-  end
+  @ffi_lib_path = BinaryPath.new.rust_binary
 
-  ffi_lib ffi_lib_path
+  ffi_lib @ffi_lib_path
+
   attach_function :nth_prime, [:int], :int
+  attach_function :read_json, [:string], :string
 end

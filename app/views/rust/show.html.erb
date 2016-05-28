@@ -1,7 +1,7 @@
 <h1>Rusted Rails Page</h1>
 
 <p>Nth Prime: <%= @nth_prime %></p>
-<p>Ruby Object passed through Rust turned into JSON: <%= @rust_to_ruby %></p>
+<p>Ruby Object passed through Rust turned into JSON: <%= JSON.parse(@rust_to_ruby)["wow"] %></p>
 
 <form>
 

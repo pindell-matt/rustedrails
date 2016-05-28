@@ -25,3 +25,4 @@ bin/embedded/rust/target/release/deps
 bin/embedded/rust/target/release/examples
 bin/embedded/rust/target/release/native
 bin/embedded/rust/Cargo.lock
+bin/embedded/rust/target/debug/*

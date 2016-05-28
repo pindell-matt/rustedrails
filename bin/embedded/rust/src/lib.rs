@@ -32,9 +32,9 @@ fn prime(num: u32) -> bool {
 
 #[no_mangle]
 pub extern fn read_json(ro: *const c_char) -> *const c_char {
-    let roo                                     = make_string(ro);
-    let json_for_rust: HashMap<String, i32>     = json::decode(&roo).unwrap();
-    let encoded                                 = json::encode(&json_for_rust).unwrap();
+    let roo                                 = make_string(ro);
+    let json_for_rust: HashMap<String, i32> = json::decode(&roo).unwrap();
+    let encoded                             = json::encode(&json_for_rust).unwrap();
     turn_into_null_string(encoded)
 }
 
